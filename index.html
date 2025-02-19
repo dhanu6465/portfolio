@@ -1,1507 +1,840 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parimaleshwaran | Professional Portfolio | Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <style>
-        /* .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1030;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        } */
-        body {
-            /* background: linear-gradient(135deg, #004d7a, #008793, #00bf72, #a8eb12); */
-            background-color: #f4f7fc;
-            position: sticky;
-            top: 0;
-            z-index: 1030;
-
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .about-card{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        /* .social-icons a {
-            font-size: 2rem;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #6c757d;
-            text-decoration: none;
-            border-radius: 50%;
-            background: linear-gradient(145deg, #e6e6e6, #ffffff);
-            box-shadow: 4px 4px 10px #d1d1d1, -4px -4px 10px #ffffff;
-            transition: all 0.3s;
-        } */
-         /* General Navbar Styles */
-.navbar {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-}
-
-.navbar-dark .navbar-brand {
-  color: #ffffff !important;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #ffffff;
-  padding: 10px 15px;
-  position: relative;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar-dark .navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background: #007bff;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover::after {
-  width: 100%;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color:  #007bff!important;
-}
-
-.navbar-dark .navbar-nav .nav-link.active {
-  font-weight: bold;
-  color: #007bff !important;
-}
-
-.navbar-dark .navbar-nav .nav-link.active::after {
-  width: 100%;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-/* Add shadow for navbar */
-.navbar.fixed-top {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
- 
-
-
-        .social-icons a i {
-            transition: transform 0.3s;
-        }
-
-        .social-icons a:hover i {
-            transform: rotate(360deg);
-        }
-
-        footer {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-        }
-
-        .hero-section img {
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Global Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f7fc;
-            color: #333;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-weight: 600;
-        }
-
-        /* About Me Section */
-        /* About Me Section */
-#about {
-    background-color: #f8f9fa; /* Soft gray background */
-    padding: 80px 0;
-}
-
-/* About Card */
-.about-card {
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow for a 3D effect */
-    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient for card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
-}
-
-.about-card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
-}
-
-/* Profile Image */
-.about-card img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-top: 20px;
-    border: 4px solid #007bff; /* Blue border for focus */
-    transition: transform 0.3s ease; /* Add hover effect */
-}
-
-.about-card img:hover {
-    transform: scale(1.1); /* Slight zoom-in on hover */
-}
-
-/* Social Links */
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    font-size: 1.5rem;
-    color: #ffffff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for social icons */
-}
-
-/* LinkedIn */
-.social-links a[aria-label="LinkedIn"] {
-    background-color: #0a66c2;
-}
-
-.social-links a[aria-label="LinkedIn"]:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(10, 102, 194, 0.4);
-}
-
-/* GitHub */
-.social-links a[aria-label="GitHub"] {
-    background-color: #333333;
-}
-
-.social-links a[aria-label="GitHub"]:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(51, 51, 51, 0.4);
-}
-
-/* Email */
-.social-links a[aria-label="Email"] {
-    background-color: #d44638;
-}
-
-.social-links a[aria-label="Email"]:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(212, 70, 56, 0.4);
-}
-
-/* About Description */
-.about-description {
-    padding-left: 40px;
-    color: #495057; /* Dark gray for text */
-}
-
-.about-description h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
-    animation: fadeInDown 1s ease-in-out;
-}
-
-.about-description p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #6c757d;
-}
-
-/* Resume Button */
-.about-description .btn {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.about-description .btn:hover {
-    background-color: #0056b3; /* Darker blue */
-    transform: scale(1.05); /* Slight enlargement */
-}
-
-/* Keyframe Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-        /* Key Achievements Section */
-        #achievements {
-            background-color: #f9f9f9;
-            padding: 60px 0;
-        }
-
-        .achievement-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .achievement-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .achievement-card .card-body {
-            padding: 40px;
-        }
-
-        .achievement-card .card-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .achievement-card .card-text {
-            color: #777;
-            font-size: 20px;
-        }
-
-        .btn-download {
-            background-color: #007bff;
-            color: #fff;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-download:hover {
-            background-color: #0056b3;
-        }
-
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .about-description {
-                padding-left: 0;
-            }
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        .skills-card,
-        .project-card {
-            border: none;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            font-size: 20px;
-        }
-
-        .skills-card:hover,
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .progress-bar {
-            animation: grow 2s ease-in-out;
-        }
-
-        @keyframes grow {
-            0% {
-                width: 0;
-            }
-        }
-
-        /* Animation for skill cards and icons */
-        .skill-icon {
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            animation: slideIn 1s ease-in-out;
-        }
-
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        .accordion-button {
-            transition: background-color 0.3s ease;
-        }
-        .accordion-body,.accordion-button
-        {
-            font-size: 20px;
-        }
-
-        .accordion-button:hover {
-            background-color: #e0e0e0;
-        }
-
-        /* Brand colors for icons */
-        .html-icon {
-            color: #E34F26;
-            /* HTML5 Orange */
-        }
-
-        .css-icon {
-            color: #1572B6;
-            /* CSS3 Blue */
-        }
-
-        .js-icon {
-            color: #F7DF1E;
-            /* JavaScript Yellow */
-        }
-
-        .node-icon {
-            color: #8CC84B;
-            /* Node.js Green */
-        }
-
-        .mongo-icon {
-            color: #4DB33D;
-            /* MongoDB Green */
-        }
-
-        /* Contact Section Styles */
-
-  .contact-card {
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  }
-
-  .contact-title {
-    font-weight: 600;
-    font-size: 1.5rem;
-  }
-
-  .form-control {
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    font-size: 1rem;
-  }
-
-  .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-  }
-
-  .btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
-
-  .btn:hover {
-    background-color: #0056b3;
-  }
-
-  .contact-icons i {
-    font-size: 1.25rem;
-  }
-
-  .contact-icons p {
-    font-size: 1rem;
-    color: #555;
-  }
-
-
-
-        /* Google Map Embed */
-        .map-embed iframe {
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Footer */
-        /* Footer styles */
-.footer {
-    background-color: #2d3e50; /* Dark background for the footer */
-    color: #fff; /* White text */
-    padding: 1rem;
-    text-align: center;
-}
-.form-control{
-    font-size: 20px;
-}
-
-/* Social icons container */
-/* Social icons container */
-
-/* Social icons container */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-/* Styling individual social icon containers */
-.social-icon-container {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100% !important;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-#instagram,#linkedin,#whatsapp,#github,#gmail
-{
-    border-radius: 50% !important;
-}
-
-/* General icon style */
-.social-icon-container a {
-    font-size: 25px;
-    color: #555; /* Default color for all icons */
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100% !important;
-    height: 100%;
-    width: 100%;
-    transition: all 0.3s ease; /* Smooth transition */
-}
-
-/* LinkedIn Icon Hover */
-.social-icon-container .linkedin:hover {
-    background-color: #0077b5; /* LinkedIn brand color */
-    color: white;
-    transform: scale(1.2); /* Zoom effect on hover */
-}
-
-/* GitHub Icon Hover */
-.social-icon-container .github:hover {
-    background-color: #333; /* GitHub brand color */
-    color: white;
-    transform: scale(1.2); /* Zoom effect on hover */
-}
-
-/* Instagram Icon Hover */
-.social-icon-container .instagram:hover {
-    background-color:#e4405f; /* Instagram brand color */
-    color: white;
-    transform: scale(1.2); /* Zoom effect on hover */
-}
-.social-icon-container .instagram:hover {
-    background-color: #d62976 !important; /* Instagram's current brand color */
-    color: white;
-    transform: scale(1.2); /* Zoom effect on hover */
-}
-/* WhatsApp Icon Hover */
-.social-icon-container .whatsapp:hover {
-    background-color: #25d366; /* WhatsApp brand color */
-    color: white;
-    transform: scale(1.2); /* Zoom effect on hover .card*/
-}
-
-/* Email Icon Hover */
-.social-icon-container .email:hover {
-    background-color: #ff0000 !important; /* Email brand color */
-    color: rgb(255, 255, 255);
-    transform: scale(1.2); /* Zoom effect on hover */
-}
-
-/* Hover effect for general icon styles */
-.social-icon-container a:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
-    text-decoration: none; /* Remove underline */
-}
-@media (max-width: 768px) {
-    .about-description {
-        padding-left: 19px;
-    }
-}
-
-
-.contact-icons{
-    font-size: 20px;
-}
-
-.tfoot{
-    font-size: 20px;
-
-}
-
-
-        /* Hero section */
-        /* Gradient text for the name */
-        /* Gradient text for the name */
-        .text-gradient {
-            background: linear-gradient(135deg, #f53d3d, #f7941e);
-            --webkit-background-clip: text;
-            color: transparent;
-        }
-
-/* Profile Picture Container */
-.profile-picture {
-  display: inline-block;
-  border: 5px solid #fff; /* White border for contrast */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-  border-radius: 0; /* No border-radius for square shape */
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-
-/* Profile Picture Container */
-.profile-picture {
-  display: inline-block;
-  border: 5px solid #fff; /* White border for contrast */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px; /* Edge-rounded corners */
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-/* Profile Picture Image */
-.profile-picture img {
-  width: 255px;
-  height: 340px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-/* Hover Effect */
-.profile-picture:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  border-color: #007bff; /* Border changes to orange */
-}
-
-.profile-picture:hover img {
-  transform: scale(1.1); /* Image zooms slightly more for dynamic effect */
-}
-
-
-
-
-      
-
-        /* Button Styles */
-        /* Social Links */
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    font-size: 1.5rem;
-    color: #ffffff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    margin: 0 10px;
-    box-shadow: 0 4px 10px rgb(0, 0, 0); /* Soft shadow for social icons */
-}
-
-/* LinkedIn */
-.social-links a[aria-label="LinkedIn"] {
-    background-color: #0a66c2;
-}
-
-.social-links a[aria-label="LinkedIn"]:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(10, 102, 194, 0.4);
-    background-color: #0059a5; /* Slightly darker blue on hover */
-}
-
-/* GitHub */
-.social-links a[aria-label="GitHub"] {
-    background-color: #333333;
-}
-
-.social-links a[aria-label="GitHub"]:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(51, 51, 51, 0.4);
-    background-color: #1a1a1a; /* Slightly darker black on hover */
-}
-
-/* Email */
-.social-links a[aria-label="Email"] {
-    background-color: #d44638;
-}
-
-.social-links a[aria-label="Email"]:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(212, 70, 56, 0.4);
-    background-color: #b93730; /* Slightly darker red on hover */
-}
-/* About Me Section */
-#about {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-}
-
-/* Heading Font */
-h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem; /* Larger size for better focus */
-    font-weight: 700;
-    color: #007bff;
-}
-
-/* Body Text Font */
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #495057;
-}
-
-/* Download Button Font and Style */
-.download-btn {
-    font-family: 'Poppins', sans-serif;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border-radius: 30px;
-    text-transform: uppercase; /* For a modern look */
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
-}
-
-.download-btn:hover {
-    background-color: #0056b3; /* Darker blue */
-    transform: scale(1.05); /* Slight enlargement */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
-}
-
-
-        /* .btn-light,
-        .btn-outline-light {
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .btn-light:hover {
-            background-color: #ffb703;
-            color: white;
-            border: 1px solid #ffb703;
-        }
-
-        .btn-outline-light:hover {
-            background-color: white;
-            color: #333;
-            border-color: white;
-        }
-
-        @media (max-width: 767px) {
-            .hero-section {
-                padding: 4rem 2rem;
-            }
-
-            .profile-image {
-                max-width: 220px;
-            }
-
-            .btn-light,
-            .btn-outline-light {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-        } */
-       /* Scroll Button Container */
-/* Scroll Button Container */
-#scrollButton {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 9999;
-}
-
-/* Scroll Button Styling */
-.btn-scroll {
-  background: linear-gradient(135deg, #ff5733, #c70039);
-  border: none;
-  color: white;
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-scroll:hover {
-  transform: scale(1.1);
-  background: linear-gradient(135deg, #ff8a33, #c70039);
-}
-
-.btn-scroll i {
-  font-size: 1.8rem;
-}
-
-.hero-section h1 {
-    font-size: 3.5rem; /* Larger size for hero text */
-    font-family: 'Merriweather', serif; /* Elegant serif font */
-    font-weight: 700;
-    color: #007bff; /* Primary color */
-    margin-bottom: 1rem;
-}
-
-.hero-section h1 span {
-    font-family: 'Montserrat', sans-serif; /* Clean sans-serif for contrast */
-    font-weight: 700;
-    color: #000000; /* Dark color for the name */
-}
-
-/* Responsive Font Sizes */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.5rem; /* Adjust for smaller screens */
-    }
-}
-
-    </style>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PrimeCare</title>
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
-    <br>
-    <br>
-    <br>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="contact_nav_container">
         <div class="container">
-          <a class="navbar-brand fw-bold" href="#">Anbu Parimalesh</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item" data-aos="zoom-in">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item" data-aos="zoom-in" data-aos-delay="100">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item" data-aos="zoom-in" data-aos-delay="200">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item" data-aos="zoom-in" data-aos-delay="300">
-                <a class="nav-link" href="#project">Projects</a>
-              </li>
-              <li class="nav-item" data-aos="zoom-in" data-aos-delay="400">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Address : wisigaton lpusm loram
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Email : demo@gmail.com
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Phone Call : +01 123455678990
+              </span>
+            </a>
           </div>
         </div>
-      </nav>
-      
-      
-
-    <!-- Hero Section -->
-    <section class="container my-5" id="home" data-aos="fade-down">
-        <div class="row align-items-center">
-          <!-- Profile Picture -->
-          <div class="col-lg-6 text-center text-lg-center">
-            <div class="profile-picture">
-              <img src="parimalesh1.jpg" alt="Profile Picture" class="img-fluid mb-4 mb-lg-0">
+      </div>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div id="myNav" class="overlay">
+            <div class="menu_btn-style ">
+              <button onclick="closeNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div class="overlay-content">
+              <a class="active" href="index.html"> Home <span class="sr-only">(current)</span></a>
+              <a class="" href="about.html"> About</a>
+              <a class="" href="why.html"> Why Us </a>
+              <a class="" href="team.html"> Our Team</a>
+              <a class="" href="testimonial.html"> Testimonial</a>
+              <a class="" href="contact.html"> Contact Us</a>
             </div>
           </div>
-      
-          <!-- Welcome Text and Professional Summary -->
-          <div class="col-lg-6">
-            <div class="hero-section text-center" data-aos="fade-down">
-                <h1 class="display-4 text-primary mb-3" style="font-family: 'Merriweather', serif;">Hello, I'm <span class="text-dark" style="font-family: 'Montserrat', sans-serif;">Anbu Parimalesh</span></h1>
-            
-            <!-- <h1 class="display-4 text-primary mb-3">Hello, I'm <span class="text-dark">Anbu Parimalesh</span></h1> -->
-            <p class="lead text-muted mb-4" style="text-align: justify;">A passionate Full-Stack Developer & Creative Editor</p>
-            <p class="fs-5 mb-4" data-aos="fade-left" style="text-align: justify;""> 
-              I specialize in building innovative, scalable web solutions with modern technologies. My expertise spans across both front-end and back-end development, creating dynamic, user-focused systems. Additionally, I craft high-quality photo and video edits, merging creativity with technical expertise.
-            </p>
+          <a class="navbar-brand" href="index.html">
+            <span>
+              PrimeCare
+            </span>
+          </a>
+          <div class="user_option">
+            <a href="">
+              <span>
+                Login
+              </span>
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <form class="form-inline">
+              <button class="btn  nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
           </div>
-        </div>
-    </div>
-      </section>
-      
-      
-      
-      
-   
-    
-
-
-
-    <!-- About Me Section -->
-    
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    </head>
-    <section id="about" class="container my-5">
-        <h2 class="text-center text-primary mb-4" data-aos="fade-down" style="font-family: 'Playfair Display', serif;">About Me</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="row align-items-center">
-                    <!-- Left Side: Profile Image & Social Links -->
-                    <div class="col-md-4 text-center mb-4" data-aos="fade-right">
-                        <div class="card about-card shadow-lg rounded border-0">
-                            <img src="parimalesh2.jpg" alt="Profile Image" class="img-fluid rounded-circle mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Connect with Me</h5>
-                                <div class="social-links">
-                                    <a href="https://www.linkedin.com/in/parimaleshwaran-a-7b7b0927bp" 
-                                       class="btn m-1" aria-label="LinkedIn" target="_blank">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="https://github.com/parimalesh" 
-                                       class="btn m-1" aria-label="GitHub" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="mailto:aparimalesh@gmail.com" 
-                                       class="btn m-1" aria-label="Email">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Right Side: About Text & Achievements -->
-                    <div class="col-md-8 about-description" data-aos="fade-left">
-                        <p class="fs-5 mb-4" style="font-family: 'Roboto', sans-serif;">
-                            I am a <strong>Full-Stack Developer</strong> with a passion for building scalable, high-performance web applications. With expertise in technologies like <strong>React</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>, I create seamless user experiences and efficient backend architectures. My enthusiasm for learning new technologies enables me to deliver exceptional solutions.
-                        </p>
-                        <div class="mt-4">
-                            <a href="PARIMALESHWARAN A-1.pdf" class="btn shadow-lg download-btn" role="button">
-                                <i class="fas fa-download"></i> Download Resume
-                            </a>
-                        </div>
-                    </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section position-relative">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <li data-target="#customCarousel1" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="baby_detail">
+                <div class="baby_text">
+                  <h2>
+                    baby <br />
+                    Care center
+                  </h2>
                 </div>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+              <div class="care_detail">
+                <a href="">
+                  Contact Us
+                </a>
+                <div class="care_text">
+                  <h2>
+                    We will take <br />
+                    Care of <br />
+                    your Baby
+                  </h2>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="baby_detail">
+                <div class="baby_text">
+                  <h2>
+                    baby <br />
+                    Care center
+                  </h2>
+                </div>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+              <div class="care_detail">
+                <a href="">
+                  Contact Us
+                </a>
+                <div class="care_text">
+                  <h2>
+                    We will take <br />
+                    Care of <br />
+                    your Baby
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="baby_detail">
+                <div class="baby_text">
+                  <h2>
+                    baby <br />
+                    Care center
+                  </h2>
+                </div>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+              <div class="care_detail">
+                <a href="">
+                  Contact Us
+                </a>
+                <div class="care_text">
+                  <h2>
+                    We will take <br />
+                    Care of <br />
+                    your Baby
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="baby_detail">
+                <div class="baby_text">
+                  <h2>
+                    baby <br />
+                    Care center
+                  </h2>
+                </div>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+              <div class="care_detail">
+                <a href="">
+                  Contact Us
+                </a>
+                <div class="care_text">
+                  <h2>
+                    We will take <br />
+                    Care of <br />
+                    your Baby
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 100,
-                easing: 'ease-in-out',
-                once: true,
-            });
-        </script>
+      </div>
     </section>
-    
-    <!-- Key Achievements Section -->
-    <section id="skills" class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <h2 class="text-center text-primary mb-5" >Key Achievements</h3>
-                <div class="row">
-                    <!-- Achievement 1 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card achievement-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-success">Developed Scalable Applications</h5>
-                                <p class="card-text">Built and deployed full-stack applications using React, Node.js,
-                                    and MongoDB, focusing on performance optimization and scalability.</p>
-                            </div>
-                        </div>
-                    </div>
+    <!-- end slider section -->
+  </div>
 
-                    <!-- Achievement 2 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card achievement-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-warning">Improved App Performance</h5>
-                                <p class="card-text">Optimized app performance by 30% using code-splitting, lazy
-                                    loading, and server-side rendering techniques.</p>
-                            </div>
-                        </div>
-                    </div>
+  <!-- service section -->
 
-                    <!-- Achievement 3 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card achievement-card">
-                            <div class="card-body">
-                                <h5 class="card-title text-info">Integrated Payment Systems</h5>
-                                <p class="card-text">Integrated payment gateways like Stripe and PayPal into
-                                    applications, ensuring secure and seamless e-commerce transactions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <section class="service_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/service1.png" alt="" />
             </div>
-        </div>
-    </section>
-
-        <!-- Skills Section -->
-    <div class="container py-5">
-        <h2 class="text-center mb-4">Skills</h2>
-        <div class="row g-4">
-            <!-- Frontend Development Card -->
-            <div class="col-md-6">
-                <div class="card skills-card">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary skill-title"><i class="fas fa-code skill-icon"></i> Frontend
-                            Development</h5>
-                        <div class="accordion" id="frontendAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="htmlHeading">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#htmlCollapse" aria-expanded="true"
-                                        aria-controls="htmlCollapse">
-                                        <i class="fab fa-html5 skill-icon html-icon"></i>&nbsp; HTML
-                                    </button>
-                                </h2>
-                                <div id="htmlCollapse" class="accordion-collapse collapse show"
-                                    aria-labelledby="htmlHeading" data-bs-parent="#frontendAccordion">
-                                    <div class="accordion-body">
-                                        <div class="progress">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;"
-                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="cssHeading">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#cssCollapse" aria-expanded="false" aria-controls="cssCollapse">
-                                        <i class="fab fa-css3-alt skill-icon css-icon"></i> &nbsp; CSS
-                                    </button>
-                                </h2>
-                                <div id="cssCollapse" class="accordion-collapse collapse" aria-labelledby="cssHeading"
-                                    data-bs-parent="#frontendAccordion">
-                                    <div class="accordion-body">
-                                        <div class="progress">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 85%;"
-                                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="jsHeading">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#jsCollapse" aria-expanded="false" aria-controls="jsCollapse">
-                                        <i class="fab fa-js skill-icon js-icon"></i> &nbsp; JavaScript
-                                    </button>
-                                </h2>
-                                <div id="jsCollapse" class="accordion-collapse collapse" aria-labelledby="jsHeading"
-                                    data-bs-parent="#frontendAccordion">
-                                    <div class="accordion-body">
-                                        <div class="progress">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"
-                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="detail-box">
+              <h4>
+           dhanu  
+              </h4>
+              <p>
+                available, but the majority have suffered alteration in some form, by injected
+              </p>
             </div>
-
-            <!-- Backend Development Card -->
-            <div class="col-md-6">
-                <div class="card skills-card">
-                    <div class="card-body">
-                        <h5 class="card-title text-secondary skill-title"><i class="fas fa-server skill-icon"></i>
-                            Backend Development</h5>
-                        <div class="accordion" id="backendAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="nodeHeading">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#nodeCollapse" aria-expanded="true"
-                                        aria-controls="nodeCollapse">
-                                        <i class="fab fa-node skill-icon node-icon"></i>&nbsp; Node.js
-                                    </button>
-                                </h2>
-                                <div id="nodeCollapse" class="accordion-collapse collapse show"
-                                    aria-labelledby="nodeHeading" data-bs-parent="#backendAccordion">
-                                    <div class="accordion-body">
-                                        <div class="progress">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="mongoHeading">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#mongoCollapse" aria-expanded="false"
-                                        aria-controls="mongoCollapse">
-                                        <i class="fas fa-database skill-icon mongo-icon"></i>&nbsp; MongoDB
-                                    </button>
-                                </h2>
-                                <div id="mongoCollapse" class="accordion-collapse collapse"
-                                    aria-labelledby="mongoHeading" data-bs-parent="#backendAccordion">
-                                    <div class="accordion-body">
-                                        <div class="progress">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%;"
-                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/service2.png" alt="" />
             </div>
-        </div>
-        <!-- Soft Skills Section -->
-<section id="soft-skills" class="container my-5">
-    <h2 class="text-center mb-4" style="color: #007bff;">Soft Skills</h2>
-    <div class="accordion" id="softSkillsAccordion">
-      <!-- Communication Accordion Item -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingCommunication">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseCommunication" aria-expanded="true" aria-controls="collapseCommunication">
-            <i class="fas fa-comments me-2 text-primary"></i> <strong>Communication</strong>
-          </button>
-        </h2>
-        <div id="collapseCommunication" class="accordion-collapse collapse show" aria-labelledby="headingCommunication"
-          data-bs-parent="#softSkillsAccordion">
-          <div class="accordion-body">
-            Excellent communication skills, both written and verbal, which enhance team collaboration and client interaction.
+            <div class="detail-box">
+              <h4>
+                metro
+              </h4>
+              <p>
+                available, but the majority have suffered alteration in some form, by injected
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <!-- Teamwork Accordion Item -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTeamwork">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTeamwork" aria-expanded="false" aria-controls="collapseTeamwork">
-            <i class="fas fa-users me-2 text-success"></i> <strong>Teamwork</strong>
-          </button>
-        </h2>
-        <div id="collapseTeamwork" class="accordion-collapse collapse" aria-labelledby="headingTeamwork"
-          data-bs-parent="#softSkillsAccordion">
-          <div class="accordion-body">
-            Collaborative team player with the ability to engage with cross-functional teams, enhancing project outcomes.
+        <div class="col-lg-3 col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/service3.png" alt="" />
+            </div>
+            <div class="detail-box">
+              <h4>
+                Baby
+              </h4>
+              <p>
+                available, but the majority have suffered alteration in some form, by injected
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <!-- Problem Solving Accordion Item -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingProblemSolving">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseProblemSolving" aria-expanded="false" aria-controls="collapseProblemSolving">
-            <i class="fas fa-lightbulb me-2 text-warning"></i> <strong>Problem Solving</strong>
-          </button>
-        </h2>
-        <div id="collapseProblemSolving" class="accordion-collapse collapse" aria-labelledby="headingProblemSolving"
-          data-bs-parent="#softSkillsAccordion">
-          <div class="accordion-body">
-            Proactive problem-solver with the ability to analyze challenges, identify root causes, and implement effective solutions.
-          </div>
-        </div>
-      </div>
-  
-      <!-- Time Management Accordion Item -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTimeManagement">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTimeManagement" aria-expanded="false" aria-controls="collapseTimeManagement">
-            <i class="fas fa-clock me-2 text-danger"></i> <strong>Time Management</strong>
-          </button>
-        </h2>
-        <div id="collapseTimeManagement" class="accordion-collapse collapse" aria-labelledby="headingTimeManagement"
-          data-bs-parent="#softSkillsAccordion">
-          <div class="accordion-body">
-            Effective at prioritizing tasks and managing time to meet deadlines, ensuring efficiency in delivering quality results.
-          </div>
-        </div>
-      </div>
-       <!-- Adaptability Accordion Item -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingAdaptability">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseAdaptability" aria-expanded="false" aria-controls="collapseAdaptability">
-            <i class="fas fa-sync-alt me-2 text-secondary"></i> <strong>Adaptability</strong>
-          </button>
-        </h2>
-        <div id="collapseAdaptability" class="accordion-collapse collapse" aria-labelledby="headingAdaptability"
-          data-bs-parent="#softSkillsAccordion">
-          <div class="accordion-body">
-            Highly adaptable to changing environments and challenges, quickly learning new technologies and methodologies to achieve goals effectively.
+        <div class="col-lg-3 col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/service4.png" alt="" />
+            </div>
+            <div class="detail-box">
+              <h4>
+                Baby Walk
+              </h4>
+              <p>
+                available, but the majority have suffered alteration in some form, by injected
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  
-        <!-- Projects Section -->
-        <h2 class="text-center mt-5 mb-4" id="project">Projects</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-project-diagram"></i> Project 1</h5>
-                        <p class="card-text">A brief description of Project 1. This project showcases skills in frontend
-                            development using modern technologies like React and Bootstrap.</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">View
-                            Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-project-diagram"></i> Project 2</h5>
-                        <p class="card-text">A brief description of Project 2. This project highlights backend
-                            development expertise with Node.js and MongoDB.</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">View
-                            Details</button>
-                    </div>
-                </div>
-            </div>
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="box">
+        <div class="img-box">
+          <img src="images/about-img.jpg" alt="" />
         </div>
-         
-    </div>
-
-    <!-- Project Modal 1 -->
-    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal1Label">Project 1 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Description:</strong> A brief description of Project 1. This project showcases frontend
-                        development using React, Bootstrap, and more.</p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, React, Bootstrap.</p>
-                    <div class="d-flex justify-content-between">
-                        <a href="#" class="btn btn-success">
-                            <i class="fas fa-play-circle"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/yourusername/project1" class="btn btn-dark" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="detail-box">
+          <h2>
+            About Us
+          </h2>
+          <p>
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internetanything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internetanything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+          </p>
+          <a href="">
+            <span>
+              Read More
+            </span>
+            <hr />
+          </a>
         </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Project Modal 2 -->
-    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal2Label">Project 2 Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Description:</strong> A brief description of Project 2. This project highlights backend
-                        development using Node.js and MongoDB.</p>
-                    <p><strong>Technologies Used:</strong> Node.js, Express, MongoDB, JavaScript.</p>
-                    <div class="d-flex justify-content-between">
-                        <a href="#" class="btn btn-success">
-                            <i class="fas fa-play-circle"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/yourusername/project2" class="btn btn-dark" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <!-- end about section -->
+
+  <!-- we have section -->
+
+  <section class="wehave_section">
+    <div class="container-fluid">
+      <div class="box">
+        <div class="detail-box">
+          <h2>
+            We Have Good <br />
+            Babysitters
+          </h2>
+          <p>
+            words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+          </p>
+          <a href="">
+            <span>
+              Read More
+            </span>
+            <hr />
+          </a>
         </div>
+        <div class="img-box">
+          <img src="images/we_img.jpg" alt="" />
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- end we have section -->
 
-    <section class="container py-5">
-        <div class="row">
-          <!-- Contact Form -->
-          <div class="col-md-6 mb-4" id="contact">
-            <div class="contact-card p-4 shadow rounded">
-              <h4 class="contact-title mb-3 text-primary">Get In Touch</h4>
-              <form id="contact-form">
-                <div class="mb-3">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why Choose Us
+        </h2>
+        <p>
+          words which don't look even slightly believable. If you are going to use a passage m
+        </p>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/why1.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h5>
+              We have Medical Care For Baby
+            </h5>
+            <a href="">
+              <span>
+                Read More
+              </span>
+              <hr />
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/why2.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h5>
+              We have Good Babysitter
+            </h5>
+            <a href="">
+              <span>
+                Read More
+              </span>
+              <hr />
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/why3.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h5>
+              We have Security for Baby
+            </h5>
+            <a href="">
+              <span>
+                Read More
+              </span>
+              <hr />
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/why4.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h5>
+              Successful
+            </h5>
+            <a href="">
+              <span>
+                Read More
+              </span>
+              <hr />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- team section -->
+
+  <section class="team_section">
+    <div class="container-fluid">
+      <div class="heading_container">
+        <h2>
+          Our Team
+        </h2>
+        <p>
+          words which don't look even slightly believable. If you are going to use a passage m
+        </p>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel team_carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team1.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Hennry bilisom
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
                 </div>
-                <div class="mb-3">
-                  <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email" required>
-                </div>
-                <div class="mb-3">
-                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Send Message</button>
-              </form>
+              </div>
             </div>
           </div>
-      
-          <!-- Contact Details -->
-          <div class="col-md-6 mb-4">
-            <div class="contact-card p-5 shadow rounded">
-              <h4 class="contact-title mb-3 text-success">Contact Details</h4>
-              <div class="contact-icons">
-                <p class="mb-2"><i class="fas fa-envelope text-primary"></i> &nbsp;<strong>Email:</strong> aparimalesh@gmail.com</p>
-                <p class="mb-2"><i class="fas fa-phone text-danger"></i> &nbsp;<strong>Phone:</strong> +91 9361883214</p>
-                <p class="mb-2"><i class="fas fa-map-marker-alt text-warning"></i> &nbsp;<strong>Location:</strong> Pudukkottai, Tamilnadu</p>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team2.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Hennry bilisom
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team3.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Hennry bilisom
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team4.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Hennry bilisom
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team5.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Hennry bilisom
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/team2.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Hennry bilisom
+                </h6>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      
+      </div>
+    </div>
+  </section>
 
-        
+  <!-- end team section -->
 
-      
+  <!-- contact section -->
 
-        <!-- Alert Message -->
-        <div id="alert-message" class="alert alert-success alert-custom mt-4" role="alert" style="display: none;">
-            Your message has been sent!
+  <section class="contact_section layout_padding-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="contact-form">
+            <div class="heading_container">
+              <h2>
+                Get In Touch
+              </h2>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Full name " />
+              <div class="top_input">
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <input type="text" placeholder="Message" class="message_input" />
+              <div class="btn-box">
+                <button>
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div id="alert-error" class="alert alert-danger alert-custom mt-4" role="alert" style="display: none;">
-            There was an error sending your message. Please try again later.
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.jpg" alt="" />
+              </div>
+              <div class="client_detail">
+                <div class="client_name">
+                  <div class="client_info">
+                    <h4>
+                      Roocky Rom
+                    </h4>
+                    <span>
+                      Parante
+                    </span>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.jpg" alt="" />
+              </div>
+              <div class="client_detail">
+                <div class="client_name">
+                  <div class="client_info">
+                    <h4>
+                      Roocky Rom
+                    </h4>
+                    <span>
+                      Parante
+                    </span>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.jpg" alt="" />
+              </div>
+              <div class="client_detail">
+                <div class="client_name">
+                  <div class="client_info">
+                    <h4>
+                      Roocky Rom
+                    </h4>
+                    <span>
+                      Parante
+                    </span>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+      </div>
+    </div>
+  </section>
 
-        <!-- Google Map Embed -->
-        <div class="map-embed mt-5">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31395.84706180498!2d78.77952930194377!3d10.38332805674805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00782d25029679%3A0x4503e2d3b4a3897f!2sPudukkottai%2C%20Tamil%20Nadu%20622003!5e0!3m2!1sen!2sin!4v1735278866048!5m2!1sen!2sin"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- end client section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info_contact">
+            <h5>
+              Address
+            </h5>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-    </section>
-    <!-- Scroll Button -->
-<div id="scrollButton">
-    <button id="scrollToggle" class="btn-scroll" title="Scroll">
-      <i id="scrollIcon" class="fas fa-chevron-down"></i>
-    </button>
-  </div>
-  
-  
-  
-    <footer class="footer bg-white py-4">
-        <div class="text-center">
-            <div class="container social-icons">
-                <!-- LinkedIn Icon -->
-                <div class="social-icon-container" id="linkedin">
-                    <a href="https://www.linkedin.com/in/parimaleshwaran-a-7b7b0927bp" class="social-icon linkedin" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-                <!-- GitHub Icon -->
-                <div class="social-icon-container" id="github">
-                    <a href="https://github.com/parimalesh" class="social-icon github" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <!-- Instagram Icon -->
-                <div class="social-icon-container" id="instagram">
-                    <a href="https://www.instagram.com/dream.lover003?igsh=MWxwYjl0cG14cGxudQ==" class="social-icon instagram" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                <!-- WhatsApp Icon -->
-                <div class="social-icon-container" id="whatsapp">
-                    <a href="https://wa.me/9361883214" class="social-icon whatsapp" title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-                <!-- Email Icon -->
-                <div class="social-icon-container" id="email">
-                    <a href="mailto:aparimalesh@gmail.com" class="social-icon email" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div><br>
+        <div class="col-md-4">
+          <div class="info_link_box">
+            <h5>
+              Navigation
+            </h5>
+            <div class="info_links">
+              <a class="active" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+              <a class="" href="about.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About</a>
+              <a class="" href="why.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Why Us </a>
+              <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+              <a class="" href="testimonial.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Testimonial</a>
+              <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
+            </div>
+          </div>
         </div>
-        
-        
-    
-        <p class="ftext text-black text-center">&copy; 2024 Anbu Parimalesh. All rights reserved.</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS animation library
-        AOS.init({
-            duration: 1000,  // Animation duration
-            easing: 'ease-in-out', // Animation easing type
-            once: true, // Animation only triggers once on scroll
-        });
-        
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const scrollButton = document.getElementById("scrollToggle");
-          const scrollIcon = document.getElementById("scrollIcon");
-      
-          scrollButton.addEventListener("click", () => {
-            const scrollPosition = window.scrollY;
-            const scrollHeight = document.body.scrollHeight;
-            const viewportHeight = window.innerHeight;
-      
-            if (scrollPosition + viewportHeight < scrollHeight - 50) {
-              // Scroll down
-              window.scrollTo({ top: scrollHeight, behavior: "smooth" });
-            } else {
-              // Scroll up
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }
-          });
-      
-          // Change icon dynamically based on scroll position
-          window.addEventListener("scroll", () => {
-            const scrollPosition = window.scrollY;
-            const scrollHeight = document.body.scrollHeight;
-            const viewportHeight = window.innerHeight;
-      
-            if (scrollPosition + viewportHeight >= scrollHeight - 50) {
-              // Change to "up" icon
-              scrollIcon.className = "fas fa-chevron-up";
-            } else {
-              // Change to "down" icon
-              scrollIcon.className = "fas fa-chevron-down";
-            }
-          });
-        });
-      </script>
+        <div class="col-md-4">
+          <h5>
+            Newsletter
+          </h5>
+          <form action="">
+            <input type="text" placeholder="Enter Your email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-    // Attach event listener to the form
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent default form submission behavior
-  
-      var data = new FormData(event.target);
-  
-      fetch("https://formspree.io/f/mvggzegj", {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json'
-        },
-        body: data
-      })
-        .then(response => {
-          if (response.ok) {
-            alert('Message sent successfully!');
-            document.getElementById('contact-form').reset(); // Reset the form
-          } else {
-            response.json().then(data => {
-              alert(data.error || 'There was an issue sending your message.');
-            });
-          }
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert('There was an error sending your message.');
-        });
-    });
+  <!-- end info section -->
 
+  <!-- footer section -->
+  <footer class="footer_section container-fluid">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </footer>
+  <!-- footer section -->
 
-    // navbar
-    // Smooth Scrolling for Links
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    target.scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
 
-</script>
-      
 </body>
 
 </html>
